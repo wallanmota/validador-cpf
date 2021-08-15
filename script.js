@@ -12,6 +12,7 @@ function validaCPF(cpf){
         let soma = 0;
         for (var i = 10; i > 1; i--){
             soma += numeros.charAt(10 - i) * i;
+            
         }
         console.log(`resultado soma primeiro digito: ${soma}`);
         
@@ -47,7 +48,6 @@ function validacao(){
     document.getElementById("error").style.display = "none"
 
     let cpf = document.getElementById("cpf_digitado").value;
-    console.log(cpf);
 
     let resultadoValidacao = validaCPF(cpf);
 
