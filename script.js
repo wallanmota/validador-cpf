@@ -16,7 +16,8 @@ function validaCPF(cpf){
         }
         console.log(`resultado soma primeiro digito: ${soma}`);
         
-        let resultado = (soma % 11) < 2 ? 0 : 11 - (soma % 11);
+        let resultado = (soma % 11) >= 10 ? 0 : soma % 11;
+            console.log(`resto = ${resultado}`);
 
         //validação do primeiro digito
         if (resultado != digitos.charAt(0)){
@@ -26,12 +27,14 @@ function validaCPF(cpf){
         soma = 0;
         numeros = cpf.substring(0, 10);
 
-        for(var k = 11; k > 1; k--){
-            soma += numeros.charAt(11 - k) * k;
+        for(var k = 0; k < 11; k++){
+            soma += numeros.charAt(0 + k) * k;
         }
         console.log(`resultado soma segundo digito: ${soma}`);
+        
 
-        resultado = (soma % 11) < 2 ? 0 : 11 - (soma % 11);
+        resultado = (soma % 11) >= 10 ? 0 : soma % 11;
+            console.log(`resto = ${resultado}`);
 
         // Validação do segundo digito
         if (resultado != digitos.charAt(1)){
