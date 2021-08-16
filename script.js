@@ -10,8 +10,8 @@ function validaCPF(cpf){
         let digitos = cpf.substring(9);
 
         let soma = 0;
-        for (var i = 10; i > 1; i--){
-            soma += numeros.charAt(10 - i) * i;
+        for (var i = 0; i < 10; i++){
+            soma += numeros.charAt(-1 + i) * i;
             
         }
         console.log(`resultado soma primeiro digito: ${soma}`);
