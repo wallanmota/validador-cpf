@@ -19,7 +19,7 @@ Projeto desenvolvido no curso Full Stack da Gama Academy
 Os dígitos verificadores de um CPF válido são calculados da seguinte forma:
 
   1. A partir dos 9 primeiros dígitos do CPF, multiplica-se cada dígito por um número, começando por 1 e incrementando para cada dígito. Para o CPF 123.456.789-09, ficaria assim:
-<img src = "img/ver1.png" width = "350px">
+<img src = "img/ver2.png" width = "350px">
 
   2. Soma-se todos os valores encontrados:
   
@@ -30,7 +30,8 @@ Os dígitos verificadores de um CPF válido são calculados da seguinte forma:
     - Resto = 10
     - Dígito = 0
   4. Agora, a partir dos 9 primeiros dígitos mais o primeiro dígito verificador calculado, multiplica-se cada dígito por um peso, começando por 0 e incrementando a cada passo. Seguindo nosso exemplo, ficaria assim:
-  <img src = "img/ver2.png" width = "350px">
+  <img src = "img/ver1.png" width = "350px">
+  
   
   5. Novamente, soma-se todos os valores encontrados:
  
