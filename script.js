@@ -51,6 +51,7 @@ function validacao(){
     document.getElementById("error").style.display = "none"
 
     let cpf = document.getElementById("cpf_digitado").value;
+    let cpf2 = cpf;
 
     let resultadoValidacao = validaCPF(cpf);
 
