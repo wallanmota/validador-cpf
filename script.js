@@ -50,13 +50,7 @@ function validacao(){
     document.getElementById("success").style.display = "none"
     document.getElementById("error").style.display = "none"
 
-    let valorDigitado = document.getElementById("cpf_digitado").value;
-    let regex = new RegExp(/[0-9]{11}$/);
-    let cpfArray = valorDigitado.match(regex);
-    let cpf = cpfArray.join('');
-    console.log(`CPF somente numeração já em String: ${cpf}`);
-    
-
+    let cpf = document.getElementById("cpf_digitado").value;
     let resultadoValidacao = validaCPF(cpf);
 
     if (resultadoValidacao){
