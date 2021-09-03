@@ -2,7 +2,7 @@
 
 Projeto desenvolvido no curso Full Stack da Gama Academy
   - Módulo Java Scrip básico;
-  - [Clique aqui](https://wallanmota.github.io/validador-cpf/) para ver o resultado ;)
+  - [Clique aqui](https://wallanmota.github.io/validador-cpf/ "target=_blank") para ver o resultado ;)
 #
 
 ### Passos para validar CPF
